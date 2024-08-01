@@ -189,10 +189,6 @@ boolean RA8876_common::ra8876Initialize() {
 
     lcdRegDataWrite(RA8876_BTE_COLR, RA8876_S0_COLOR_DEPTH_16BPP << 5 | RA8876_S1_COLOR_DEPTH_16BPP << 2 | RA8876_S0_COLOR_DEPTH_16BPP); // 92h
 
-    /*TFT timing configure*/
-    lcdRegWrite(RA8876_DPCR); // 12h
-    lcdDataWrite(XPCLK_INV << 7 | RA8876_DISPLAY_OFF << 6 | RA8876_OUTPUT_RGB);
-
     /* TFT timing configure (1024x600) */
     lcdRegWrite(RA8876_DPCR); // 12h
     lcdDataWrite(XPCLK_INV << 7 | RA8876_DISPLAY_OFF << 6 | RA8876_OUTPUT_RGB);
