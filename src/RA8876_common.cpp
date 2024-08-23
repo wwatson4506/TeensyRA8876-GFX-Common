@@ -1550,7 +1550,7 @@ void RA8876_common::CGRAM_initial(uint32_t charAddr, const uint8_t *data, uint16
 		for (i = 0; i < count/2; i++) {
 			checkWriteFifoNotFull();
 			tmp = *data & 0xff;
-			data+=;
+			data++;
 			tmp |= *data << 8;
 			data++;
 			lcdDataWrite16(tmp);
