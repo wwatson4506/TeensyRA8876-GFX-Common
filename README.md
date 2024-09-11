@@ -1,7 +1,12 @@
 # TeensyRA8876-GFX-Common
 ## A universal RA8876 graphics library for use with SPI and 8080 drivers for Teensy boards and variants.
 
+Communication with the Teensy is accomplished using a 3/4 wire interface.
+
+![https://github.com/wwatson4506/TeensyRA8876-GFX-Common/blob/main/extras/RA8876_GFX_Common.jpg](https://github.com/wwatson4506/TeensyRA8876-GFX-Common/blob/main/extras/RA8876_GFX_Common.jpg)
+
 This library is designed for use  with one of the following RA8876 drivers:
+
 - https://github.com/wwatson4506/TeensyRA8876-8080
 or:
 - https://github.com/wwatson4506/TeensyRA8876-SPI
