@@ -38,5 +38,14 @@ They added functions to be compatible with other display libraries, performed a 
 
 ***
 
+# REFERENCES
+ER-TFTM-101-1 10.1" TFT from BuyDisplay:
+- https://www.buydisplay.com/serial-spi-i2c-10-1-inch-tft-lcd-module-dislay-w-ra8876-optl-touch-panel
+
+PJRC Forum Threads:
+- https://forum.pjrc.com/threads/58565-RA8876LiteTeensy-For-Teensy-T36-and-T40
+- https://forum.pjrc.com/index.php?threads/ra8876-parallel-display-library-testing.75345/
+- https://forum.pjrc.com/index.php?threads/recommendations-for-10-tft-display-with-touchscreen-for-teensy-4-1.75666/
+***
 
 # This is WIP.  USE AT YOUR OWN RISK.  There are no guarantees when using this library. More to come.
