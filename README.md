@@ -39,4 +39,4 @@ They added functions to be compatible with other display libraries, performed a 
 ***
 
 
-# This is WIP.   USE AT YOUR OWN RISK.  There are no guarantees when using this library. More to come.
+# This is WIP.  USE AT YOUR OWN RISK.  There are no guarantees when using this library. More to come.
