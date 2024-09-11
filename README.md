@@ -21,8 +21,8 @@ or:
 Pinouts are defined in the driver libraries.
 ***
 ### CONFIG FILES
-Both 8080 Parallel and SPI libraries have config file.
-Config files for 8080 and SPI are found in the driver libraries.:
+Both 8080 Parallel and SPI libraries have a config file.
+Config files for 8080 and SPI are found in the driver libraries.
 ***
 
 ### EXAMPLES
