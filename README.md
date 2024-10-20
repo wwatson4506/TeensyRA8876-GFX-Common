@@ -15,7 +15,7 @@ or:
 ## LIBRARY INSTALLATION
 1. Unzip **TeensyRA8876-GFX-Common** into the **Arduino/libraries**  folder.
 2. Unzip **TeensyRA8876-8080** or **TeensyRA8876-SPI** into the **Arduino/libraries** folder.
-3. Download **ILI9341_fonts** ![https://github.com/wwatson4506/ILI9341_fonts](https://github.com/wwatson4506/ILI9341_fonts) into the **Arduino/libraries** folder.
+3. Download **ILI9341_fonts** [https://github.com/wwatson4506/ILI9341_fonts](https://github.com/wwatson4506/ILI9341_fonts) into the **Arduino/libraries** folder.
 ***
 
 ### PINOUTS
