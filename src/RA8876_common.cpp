@@ -437,7 +437,7 @@ A large filled rectangle might take 3300 microseconds
 *****************************************************************/
 void RA8876_common::check2dBusy(void) {
     ru32 i;
-    for (i = 0; i < 100000; i++) { // Please according to your usage to modify i value.
+    for (i = 0; i < 1000000; i++) { // Please according to your usage to modify i value.
         delayMicroseconds(1);
         if ((lcdStatusRead() & 0x08) == 0x00) {
             return;
