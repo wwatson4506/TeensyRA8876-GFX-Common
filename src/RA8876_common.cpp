@@ -3924,6 +3924,8 @@ boolean RA8876_common::setFontSize(uint8_t scale, boolean runflag) {
 
     case 0:
         if (UDFont) { // User Defined Fonts
+            _FNTheight = 16;
+            _FNTwidth = 8;
             _scaleY = 1;
             _scaleX = 1;
         } else {
