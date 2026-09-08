@@ -6437,7 +6437,7 @@ size_t RA8876_common::rawPrint(uint8_t text) {
 //**************************************************************//
 void RA8876_common::setRotation(uint8_t rotation) { // rotate text and graphics
     _rotation = rotation & 0x3;
-    uint8_t macr_settings;
+    uint8_t macr_settings = 0;
 
     switch (_rotation) {
     case 0:
