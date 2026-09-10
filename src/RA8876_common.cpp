@@ -3660,6 +3660,14 @@ void RA8876_common::cursorInit(void) {
     Enable_Text_Cursor_Blinking();               // Turn blinking cursor on
 }
 
+// Setup text cursor wrap (for compatability only)
+void RA8876_common::setTextWrap(bool textWrap) {
+  if(textWrap)
+    _TXTparameters |= 2;
+  else
+    _TXTparameters &= 0xFB;
+}
+
 // void RA8876_common::setCursor(uint16_t x, uint16_t y)
 //{
 //   setTextCursor(x, y);
