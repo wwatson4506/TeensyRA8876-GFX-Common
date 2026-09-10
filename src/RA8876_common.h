@@ -518,6 +518,7 @@ class RA8876_common : public Print {
     void fillEllipse(int16_t xCenter, int16_t yCenter, int16_t longAxis, int16_t shortAxis, uint16_t color);
     void fillTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color);
     void cursorInit(void);
+    void setTextWrap(bool textWrap);
     // void setCursor(uint16_t x, uint16_t y);
     void gCursorSet(boolean gCursorEnable, uint8_t gcursortype, uint8_t gcursorcolor1, uint8_t gcursorcolor2);
     void gcursorxy(uint16_t gcx, uint16_t gcy);
