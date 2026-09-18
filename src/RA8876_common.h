@@ -689,6 +689,13 @@ class RA8876_common : public Print {
 
     void charBounds(char c, int16_t *x, int16_t *y,
                     int16_t *minx, int16_t *miny, int16_t *maxx, int16_t *maxy);
+    // Added 09-16-26 WW
+    uint16_t measureTextWidth(const char* text, int chars = 0);
+    uint16_t measureTextHeight(const char* text, int chars = 0);
+    void measureChar(unsigned char c, uint16_t* w, uint16_t* h);
+	uint16_t fontCapHeight() { return (font) ? font->cap_height : textsize * 8; }
+	uint16_t fontLineSpace() { return (font) ? font->line_space : textsize * 8; }
+
     void getTextBounds(const uint8_t *buffer, uint16_t len, int16_t x, int16_t y,
                        int16_t *x1, int16_t *y1, uint16_t *w, uint16_t *h);
     void getTextBounds(const char *string, int16_t x, int16_t y,
