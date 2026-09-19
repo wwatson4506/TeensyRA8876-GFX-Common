@@ -530,7 +530,7 @@ class RA8876_common : public Print {
     void setTouchLimit(uint8_t limit); // 5 for FT5206, 1 for  RA8875
     uint8_t getTouchLimit(void);
 
-    void setWireObject(TwoWire *wire) { _wire = wire; }
+    void setWireObject(TwoWire *wire) { _wire = &Wire; }
     void useCapINT(const uint8_t INTpin = 2, const uint8_t RSTPin = 255);
     void enableCapISR(bool force = false);
     void updateTS(void);
@@ -948,7 +948,7 @@ class RA8876_common : public Print {
     void _disableCapISR(void);
     volatile boolean _needCTS_ISRrearm;
     static void cts_isr(void);
-    TwoWire *_wire = &Wire2;
+    TwoWire *_wire = &Wire;
 #endif
 };
 
