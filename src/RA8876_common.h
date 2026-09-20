@@ -81,6 +81,10 @@
 
 #include "RA8876Registers.h"
 
+#if __has_include("RA8876_t3.h")
+#include <RA8876_Config_SPI.h>
+#endif
+
 //#define USE_FT5206_TOUCH
 
 /* Addins for ILI and GFX Fonts */
