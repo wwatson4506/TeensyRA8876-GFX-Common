@@ -85,6 +85,10 @@
 #include <RA8876_Config_SPI.h>
 #endif
 
+#if __has_include("RA8876_t41_p.h")
+#include <RA8876_Config_8080.h>
+#endif
+
 //#define USE_FT5206_TOUCH
 
 /* Addins for ILI and GFX Fonts */
@@ -534,7 +538,7 @@ class RA8876_common : public Print {
     void setTouchLimit(uint8_t limit); // 5 for FT5206, 1 for  RA8875
     uint8_t getTouchLimit(void);
 
-    void setWireObject(TwoWire *wire) { _wire = &Wire; }
+    void setWireObject(TwoWire *wire) { _wire = wire; }
     void useCapINT(const uint8_t INTpin = 2, const uint8_t RSTPin = 255);
     void enableCapISR(bool force = false);
     void updateTS(void);
